@@ -1,0 +1,33 @@
+<nav>
+	<a [routerLink]=" ['/Home'] ">
+    Home
+  </a>
+  |
+	<a [routerLink]=" ['/About'] ">
+    About
+  </a>
+  |
+	<a [routerLink]=" ['/RepoBrowser/RepoList', {org: 'angular'}] ">
+    Github Repos
+  </a>
+</nav>
+<section id="intro" class="intro" style="height:auto;">
+    <div class="slogan">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+		<h2>wholitical</h2>
+	    </div>
+	</div>
+	</div>
+    </div>
+</section>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+
+<footer>
+  © 2016
+</footer>

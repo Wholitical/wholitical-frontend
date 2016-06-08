@@ -1,0 +1,9 @@
+<h3>Repo list</h3>
+<ul>
+<li *ngFor="let candidate of candidates | async">
+      {{ candidate.name }}
+      {{ candidate.office_full }}
+      {{ candidate.party }}
+      {{ candidate.incumbent_challenge_full }}
+</li>
+</ul>
